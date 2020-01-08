@@ -56,3 +56,5 @@ Los componentes en react hacen un proceso de:
     Una vez que se lanza un error este es el primer método que se llama, el cual recibe el error como argumento y cualquier valor devuelto en este método es utilizado para actualizar el estado del componente.
 * #### componentDidCatch()
     Este método es llamado después de lanzarse un error y pasa como argumento el error y la información representada sobre el error.
+
+## Arquitectura basada en componentes React 
