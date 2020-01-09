@@ -1,10 +1,10 @@
 import "./Carousel.scss"
 import React from "react"
 
-const Carousel = ({ shildren }) => (
-    <section class="carousel">
-        <div class="carousel__container">
-            {shildren}
+const Carousel = ({ children }) => (
+    <section className="carousel">
+        <div className="carousel__container">
+            { children }
         </div>
     </section>
 )

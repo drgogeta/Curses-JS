@@ -1,4 +1,7 @@
+@import "vars";
+
 body {
     margin: 0;
-    background-color: aquamarine;
+    background-color: $main-color;
+    font-family: $theme-font;
 }
