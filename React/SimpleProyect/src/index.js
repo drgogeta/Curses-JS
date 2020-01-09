@@ -1,5 +1,5 @@
 import React from 'React'
 import ReactDOM from 'react-dom'
-import HelloWord from './components/HelloWord'
+import App from './container/app'
 
-ReactDOM.render(<HelloWord/>, document.getElementById('app'))
+ReactDOM.render(<App/>, document.getElementById('app'))
