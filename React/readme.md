@@ -84,3 +84,24 @@ React nos permite crear nuestros propios Hooks. Solo debemos seguir algunas conv
     Los hooks siempre deben empezar con la palabra use: useAPI, useMovies, useWhatever.
     Si nuestro custom hook nos permite consumir/interactuar con dos elementos (por ejemplo, title y setTitle), nuestro hook debe devolver un array.
     Si nuestro custom hook nos permite consumir/interactuar con tres o más elementos (por ejemplo, name, setName, lastName, setLastName, etc.), nuestro hook debe devolver un objeto.
+
+## React Router
+
+
+
+## REDUX
+
+Nace de la arquitectura **FLUX**, tomando como base el lenguaje funcional **ELM** creado por *Dan Abramov y Andrew Clark*, es de las libreria mas usadas para el manejo de flujos de informacion.
+
+Redux nace bajo la necesidad de *¿como se podria manejar el estado dentro de un aplicativo JavaScript?*, ya que el estado un aplicativo puede variar apartir de las interacciones del uaurio o los llamados a las API. Con lo anterior descrito podemos intuir que Redux crea un estado y se encarga de predecir las mutaciones que el mismo pueda tener.
+
+Redux tiene pasos
+
+* ### Actions: Son aquellas que llaman a los Reducers enviando como parametros la accion del usuario.
+* ### Reducxer: Son funciones puras las cuales taman el estado anterior y con una accion devuelven un nuevo estado con los cambios solicitados.
+* ### Store: Es la fuente de la verdad de nuestro aplicativo y es de solo lectura.
+
+En el siguiente esquema se puede ver el ciclo de Redux
+
+![alt text](https://miro.medium.com/proxy/1*EdiFUfbTNmk_IxFDNqokqg.png)
+ 
