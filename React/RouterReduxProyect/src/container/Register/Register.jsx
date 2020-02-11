@@ -2,6 +2,7 @@ import './Register.scss'
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
 const Register = () => (
   <section className="register">
@@ -20,4 +21,4 @@ const Register = () => (
   </section>
 )
 
-export default Register
+export default connect(null, null)(Register)
