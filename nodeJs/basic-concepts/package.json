@@ -1,0 +1,11 @@
+{
+  "name": "basic-curse",
+  "version": "1.0.0",
+  "description": "the basic curse and concept by nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Daniel Castellanos",
+  "license": "ISC"
+}
