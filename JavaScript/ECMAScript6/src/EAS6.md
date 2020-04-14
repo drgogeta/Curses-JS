@@ -1,12 +1,4 @@
-# ECMAScript  6^
-## Que es?
-
-Es un conjunto de normas y estandares que establecio la netscape para los diferentes motores de JavaScript y apartir del 2015 comensaron a trabajar en un conjunto de funcionalidades que se han venido agregando al lenguaje.
-
-wikipedia lo define como:
-```
-ECMAScript es una especificación de lenguaje de programación publicada por ECMA International. El desarrollo empezó en 1996 y estuvo basado en el popular lenguaje JavaScript propuesto como estándar por Netscape Communications Corporation. Actualmente está aceptado como el estándar ISO/IEC 22275:2018.
-```
+# EAS6
 
 ## Params
 
@@ -25,7 +17,7 @@ Con la nueva versio de EcmacScript se puede asignar un valor por defecto al mome
  }
 ```
 
-[ejemplo](src/params-concat.js)
+[ejemplo](EAS6/params-concat.js)
 
 ## Concat
 
@@ -48,7 +40,7 @@ console.log(epicPhrase)
 ```
 
 Lo que nos ayuda mucho al momento de concatenar grandes volumenes de informacion
-[ejemplo](src/template-literal.js)
+[ejemplo](EAS6/template-literal.js)
 
 ## Declarations
 
@@ -82,6 +74,8 @@ Con const el scope funciona igual que con let, pero la declaracion es inmutable
 console.log(globalConst)
 ```
 
+[ejemplo](EAS6/declarations.js)
+
 ## Multiline
 
 En la anteriores vesiones EcmaScript para realizar un salto de linea al momento de declrar un estring lo haciamos de la siguiente manera 
@@ -100,7 +94,7 @@ because is delicious`
 console.log(lorem1)
 ``` 
 
-[ejemplo](src/multiline.js)
+[ejemplo](EAS6/multiline.js)
 
 ## Destructuring
 
@@ -127,11 +121,11 @@ const {name, age} = person
 console.log(name, age)
 ```
 
-[ejemplo](src/destructuring.js)
+[ejemplo](EAS6/destructuring.js)
 
 ## spreadOperator 
 
-[ejemplo](src/spreadOperator.js)
+[ejemplo](EAS6/spreadOperator.js)
 
 ## Parameters in objects
 
@@ -151,6 +145,8 @@ const age = 23
 const person = { name, age }
 console.log(person)
 ```
+
+[ejemplo](EAS6/destructuring.js)
 
 ## Arrow Functions
 
@@ -182,6 +178,7 @@ const persons = [
 persons.forEach(person => console.log(person) )
 ```
 
+[ejemplo](EAS6/arrowFunctions.js)
 ## Promesas
 
 La promesas fueron creadas como otra alternativa para manejar la asyncronidad en JavaScript, con las ventajas de que una promesa tiene un estado y un alternativa para madularizar los callBacks:
@@ -206,7 +203,62 @@ En el ejemplo anterior se creo una funcion que devueve una promesa y segun el pa
 
 Las promesas tambien tienen otra particularidad y es que se ejecutan en un task diferente y tienen un nivel de prioridad mayor que otros llamados asyncronos
 
-[ejemplo](src/promises.js)
+[ejemplo](EAS6/promises.js)
 
 ## Clases
 
+Es una azucar sintavtica que es añadida para tener la programacion orientada a objetos en JavaScript. Se usa una palabra reservada class y la variables definidas dentro de la clase toman un scope global.
+
+```JavaScript
+class Person {
+    name
+    lastName
+    middleName
+
+    constructor(name, lastName, middleName) {
+        this.name = name
+        this.lastName = lastName
+        this.middleName = middleName
+    }
+
+    whatIsYourName() {
+        return `${this.name} ${this.lastName} ${this.middleName}`
+    }
+}
+const daniel = new Person('DAniel', 'Ricardo', 'Castellanos')
+console.log(daniel.whatIsYourName())
+```
+
+[ejemplo](EAS6/clases.js)
+
+## Módulos
+
+En la nueva version de ECMACSript añadieron los imports y exports, lo cual es una manera de trabajar con modulos dentro de nuestro aplicativo y tambien de acceder a las propiedades de un archivo desde algun llamado externo.
+
+```JavaScript
+
+export class Person {
+    name
+    lastName
+    middleName
+
+    constructor(name, lastName, middleName) {
+        this.name = name
+        this.lastName = lastName
+        this.middleName = middleName
+    }
+
+    whatIsYourName() {
+        return `${this.name} ${this.lastName} ${this.middleName}`
+    }
+}
+
+import { Person } from './clases'
+
+const daniel = new Person('DAniel', 'Ricardo', 'Castellanos')
+console.log(daniel.whatIsYourName())
+
+```
+## Generators
+
+[ejemplo](EAS6/generators.js)
